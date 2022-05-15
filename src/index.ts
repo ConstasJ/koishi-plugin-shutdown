@@ -1,12 +1,17 @@
 import {Context} from 'koishi';
 
-export const name='ping';
+export const name='shutdown';
 
 export function apply(ctx:Context){
-    ctx.middleware(async (session, next)=>{
-        if(session.content === '天王盖地虎'){
-            await session.send('宝塔镇河妖');
-            return next();
-        }else return next();
-    })
+    ctx.command('shutdown','关闭机器人',{authority:4})
+        .option('reboot','-r 重启机器人')
+        .action(async ({options})=>{
+            if(options?.reboot){
+                await ctx.app?.stop();
+                await ctx.app?.start();
+            }
+            else{
+                await ctx.app?.stop();
+            }
+        })
 }
