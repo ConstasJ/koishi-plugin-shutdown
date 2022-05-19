@@ -1,6 +1,6 @@
 {
   "name": "koishi-plugin-shutdown",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "A shutdown plugin for Koishi.js.",
   "main": "lib/index.js",
   "types": "lib/index.ts",
