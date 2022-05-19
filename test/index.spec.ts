@@ -12,5 +12,5 @@ before(async ()=>{
 })
 
 it('should correctly respond',()=>{
-    cli.shouldReply('天王盖地虎','宝塔镇河妖');
+    cli.shouldNotReply('asd');
 })

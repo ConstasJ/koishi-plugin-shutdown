@@ -1,7 +1,7 @@
 {
-  "name": "koishi-plugin-template",
+  "name": "koishi-plugin-shutdown",
   "version": "1.0.0",
-  "description": "A template repo for Koishi.js plugin development.",
+  "description": "A shutdown plugin for Koishi.js.",
   "main": "lib/index.js",
   "types": "lib/index.ts",
   "scripts": {
